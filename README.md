@@ -6,8 +6,8 @@ This component showcases core user information in a clean, high-contrast dark th
 
 ### 🌐 Live Preview
 
-Explore the live component hosted via GitHub Pages:
-**[https://codexpro-dev.github.io/Profile-Card/]**
+Explore the live component hosted via Netlify:
+**[https://brainwave-pc.netlify.app/]**
 
 ---
 
