@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  padding-top: 8rem;
 }
 
 .card {
@@ -214,6 +214,11 @@ nav a:focus {
 }
 
 @media screen and (max-width: 610px) {
+
+  body{
+    background: #000;
+  }
+
   .card-info{
     text-align: center;
     padding: 0;
@@ -226,6 +231,8 @@ nav a:focus {
   }
   .profile-card{
     margin-top: 0;
+    height: 100vh;
+    padding-top: 5rem;
   }
   .card{
     display: flex;
@@ -234,9 +241,10 @@ nav a:focus {
     justify-content: center;
     height: 41rem;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin-bottom: 0;
     border-radius: 0;
+    border: none;
   }
 
   .card-info h1{
