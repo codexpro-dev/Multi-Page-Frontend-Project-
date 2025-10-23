@@ -1,0 +1,883 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+
+main nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.176);
+  padding: 0.2rem 2rem;
+  padding-bottom: 1rem;
+}
+
+main nav ul {
+  display: flex;
+}
+
+main nav ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  margin-left: 4rem;
+  font-weight: 600;
+}
+
+main nav ul li a {
+  text-decoration: none;
+  color: rgb(97, 169, 252);
+  transition: color 0.3s ease;
+}
+
+main nav ul li a:hover,
+main nav ul li a:focus-visible {
+  color: rgba(70, 131, 236, 0.699);
+}
+
+.logo h1 {
+  color: rgb(48, 161, 254);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  text-shadow: 3px 1px 5px rgb(9, 9, 243);
+}
+
+.logo h1 span {
+  color: rgba(84, 79, 244, 0.372);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: none;
+}
+
+.logo h1 a {
+  text-decoration: none !important;
+  outline: none;
+  color: rgb(48, 161, 254);
+}
+
+.main {
+  text-align: center;
+  padding: 0.5rem;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main h1 {
+  font-size: 2.7rem;
+  color: rgb(228, 236, 248);
+}
+
+.main p {
+  margin-top: 1rem;
+  font-size: 1.6vmax;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.text {
+  color: white !important;
+}
+.sub-text span {
+  color: rgb(56, 169, 254);
+  font-weight: bold;
+}
+
+.sub-text br {
+  display: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 2.1rem;
+  padding-right: 2.1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.176);
+}
+
+footer nav {
+  border: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.socials nav {
+  display: flex;
+}
+
+nav i {
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+  margin-top: 0.35;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: rgb(35, 170, 233);
+  margin-right: 1.5rem;
+}
+
+nav i:hover,
+nav a:focus-visible {
+  color: rgba(0, 128, 255, 0.692);
+}
+
+@media screen and (max-width: 970px) {
+  .main p {
+    font-size: 1.9vmax;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .main h1 {
+    font-size: 5vmax;
+  }
+  .main p {
+    font-size: 2.1vmax;
+  }
+
+  footer {
+    padding: 0.5rem;
+  }
+
+  nav i {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main p {
+    font-size: 2.6vmax;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  main nav ul li {
+    font-size: 1rem;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-top: 1rem;
+  }
+  .copywrite {
+    order: 3;
+    text-align: center;
+  }
+  .socials {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    margin-top: 4.6rem;
+    padding-top: 1rem;
+    background: rgba(0, 0, 0, 0.098);
+    height: 24.4rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(80px);
+    z-index: 3;
+    width: 100%;
+    opacity: 0.9;
+    margin-right: -900px;
+  }
+
+  .active {
+    margin-right: 0;
+    opacity: 1;
+  }
+
+  main nav ul li {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  main nav {
+    padding: 1rem 0.7rem;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+    background-color: #000000;
+  }
+
+  main .logo h1 {
+    font-size: 1.7rem;
+    padding-bottom: 0.6rem;
+  }
+
+  footer .logo h1 {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  .navB {
+    display: flex !important;
+    flex-direction: column;
+    border: 1px solid rgba(199, 206, 224, 0.249);
+    height: 2.3rem;
+    width: 2.6rem;
+    cursor: pointer;
+    border-radius: 3px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+  }
+
+  .navB .line1,
+  .navB .line2 {
+    width: 1.5rem;
+    height: 2.5px;
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 2px;
+    position: absolute;
+  }
+
+  .navB .line1 {
+    /* rotate: 44deg; */
+    margin-top: 8px;
+  }
+  .navB .line2 {
+    margin-bottom: 8px;
+    /* rotate: -44deg; */
+  }
+
+  .tog1 {
+    margin-top: 0;
+  }
+
+  .tog2 {
+    margin-bottom: 0;
+  }
+
+  footer nav {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sub-text br {
+    display: flex;
+  }
+
+  main .sub-text {
+    margin-top: 0;
+    padding-top: 0.4rem;
+  }
+
+  main .sub-text span {
+    padding-top: 2rem;
+  }
+
+  .main h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* <><><><><><><><><><><><> CONTACT US <><><>>><<><><>><><> */
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  height: 100%;
+}
+
+.contactUs-text {
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 3rem;
+}
+
+.contactUs-text p {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.795);
+}
+
+.contact-form {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  /* height: 100%; */
+  color: black;
+  padding: 0.3rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.contact {
+  background: black;
+  color: #fff;
+  padding: 2rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  width: 22rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-text {
+  margin-bottom: 3rem;
+}
+
+.contact .contact-text h2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 0.7rem;
+}
+
+.contact .contact-text p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #ffffffce;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.teller,
+.email,
+.address {
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.teller,
+.email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.teller a,
+.email a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.teller img,
+.email img,
+.address img {
+  width: 1.2rem;
+  margin-top: 5px;
+  margin-right: 1.5rem;
+}
+
+.address {
+  font-size: 13px;
+}
+
+.address img {
+  margin-top: 0;
+}
+
+.deco {
+  position: relative;
+}
+
+.deco img {
+  position: absolute;
+  width: 8rem;
+}
+
+.deco1 {
+  right: 0;
+  margin-right: -20.5rem;
+  bottom: -10.5rem;
+}
+
+.deco2 {
+  margin-right: -17.5rem;
+  right: 0;
+  width: 6.5rem !important;
+  bottom: -7.6rem !important;
+}
+
+.form {
+  width: 20rem;
+  padding: 1rem 0rem;
+}
+
+.first,
+.second {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.first span,
+.second span {
+  font-size: 12px;
+  color: #000000c7;
+  font-weight: 900;
+}
+
+.name label,
+.email-number label,
+.subject label,
+.email-number label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 2rem;
+  padding-right: 1rem;
+}
+
+/* .name label span,
+.email-number label span,
+.subject label span,
+.email-number label span{
+} */
+
+.name label input,
+.email-number label input,
+.subject label input,
+.email-number label textarea {
+  display: flex;
+  width: 100%;
+  border: none;
+  padding: 6px 1px;
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.473);
+  color: black;
+  transition: 0.4s ease;
+}
+
+.form input:focus-visible,
+.form textarea:focus-visible,
+.form input:hover,
+.form textarea:hover {
+  border-bottom: 2px solid black;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.submit-btn {
+  width: 90%;
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+
+.submit-btn .arrow {
+  position: absolute;
+  margin-right: 4rem;
+  width: 10rem;
+  margin-top: 1.3rem;
+}
+
+.submit-btn button {
+  padding: 0.7rem 2rem;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form .error {
+  font-size: 12px;
+  color: rgb(131, 6, 6);
+  margin-top: 2px;
+}
+
+.form .success {
+  font-size: 12px;
+  /* background-color: rgb(3, 7, 3); */
+  width: 21%;
+  padding: 10px;
+  color: green;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 5.5rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 730px) {
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .first,
+  .second {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contactUs-text {
+    margin-bottom: 0;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .contact {
+    width: 18rem;
+    align-items: center;
+    margin: 0;
+    margin-right: 10px;
+    padding: 1rem 1.5rem;
+    height: 100%;
+  }
+
+  .teller img,
+  .email img,
+  .address img {
+    width: 1.2rem;
+    margin-top: 5px;
+    margin-right: 0.5rem;
+  }
+
+  .contact-text {
+    margin-bottom: 1.5rem;
+  }
+
+  label input {
+    margin-bottom: 0.6rem;
+  }
+
+  .form {
+    width: 17rem;
+  }
+
+  .submit-btn {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contactUs {
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 11rem;
+  }
+
+  .contactUs-text h1,
+  p {
+    color: #ffffff !important;
+  }
+
+  .contactUs-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+    height: 100%;
+  }
+
+  .contact {
+    width: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    border: 1px solid rgba(113, 112, 112, 0.301);
+    padding-top: 2rem !important;
+    height: 100% !important;
+    overflow: visible;
+  }
+
+  .contact-text {
+    color: white !important;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .contact-text p {
+    color: #ffffffcb !important;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .form {
+    width: 100%;
+    height: 30rem;
+    color: #fff !important;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .teller,
+  .email,
+  .address {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact .address {
+    display: flex !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .teller img,
+  .email img,
+  .address img {
+    width: 1.7rem;
+    margin-top: 15px;
+  }
+
+  .teller,
+  .email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .address img {
+    display: flex;
+    align-self: center;
+    margin-bottom: 8px;
+  }
+
+  label input,
+  label textarea {
+    color: white !important;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.751) !important;
+  }
+
+  label span {
+    color: white !important;
+    margin-top: 1rem;
+  }
+
+  .form .error {
+    font-size: 12px;
+    color: rgb(131, 6, 6) !important;
+    margin-top: 2px;
+  }
+
+  .deco {
+    display: none;
+  }
+
+  .submit-btn button {
+    background-color: #0a26fa;
+    color: rgb(255, 255, 255);
+  }
+
+  .submit-btn {
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contactUs-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .contactUs-text p {
+    font-size: 0.8rem;
+  }
+  .contact-text p {
+    font-size: 0.8rem;
+  }
+}
+
+/* <<<<<<<<>>>>>>>>ABOUT US<<<<<<<<<>>>>>>>> */
+
+.about-cont {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* ===== Header ===== */
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.about-header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 1rem 0;
+}
+
+.about-header p {
+  color: #cfcfcf;
+  font-size: 1.1rem;
+}
+
+/* ===== Card Sections ===== */
+.about-card {
+  background: linear-gradient(145deg, #121212, #1a1a1a);
+  border: 1px solid rgba(0, 0, 255, 0.15);
+  border-radius: 16px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 4, 255, 0.1);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 30rem;
+  height: 13rem;
+}
+
+.confidence {
+  width: 60%;
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  border-color: #5ec1ff;
+  box-shadow: 0 0 25px rgba(0, 8, 255, 0.25);
+}
+
+.about-card h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.about-card p {
+  color: #e3e3e3a2;
+  font-size: 1rem;
+}
+
+.card-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 800px) {
+  .card-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: block;
+    height: 100vh;
+  }
+  .about-card {
+    width: 90%;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-cont{
+    padding-top: 5rem;
+  }
+  .about-card p {
+    color: rgba(255, 255, 255, 0.712) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .about-card {
+    padding: 0 !important;
+    padding: 1rem !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-card p {
+    font-size: 15px !important;
+  }
+}

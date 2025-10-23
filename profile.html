@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/143193fa4e.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profilecard.css" />
+    <title>Brainwave</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="logo">
+          <h1>
+            <a href="/"><span>{</span> CødeXpro <span>}</span></a>
+          </h1>
+        </div>
+        <div class="nav-links">
+          <ul id="menuB">
+            <li><a href="/aboutUs.html">About Us</a></li>
+            <li><a href="/contactUs.html">Contact Us</a></li>
+            <li><a href="/profile.html">Profile Card</a></li>
+          </ul>
+        </div>
+        <div id="menuBtn" class="navB" style="display: none">
+          <div id="line1" class="line1"></div>
+          <div id="line2" class="line2"></div>
+        </div>
+      </nav>
+    <article class="profile-card" data-testid="test-profile-card">
+      <div class="card" data-testid="card">
+        <div class="proTag">
+          <figure class="profile-img" data-testid="profile-img">
+            <img
+              src="assets/SpiderFerrariHP.jpg"
+              width="100"
+              alt="Profile photo of CodeXpro"
+              id="avatar"
+              data-testid="test-user-avatar"
+            />
+            <label for="FileInput" aria-label="Upload a new avatar">
+              <i class="fa-regular fa-camera"></i>
+              <input
+                type="file"
+                accept="image/*"
+                id="FileInput"
+                style="display: none;" 
+              />
+            </label>
+          </figure>
+          <div class="card-info" data-testid="card-info">
+            <h2 data-testid="test-user-name">CodeXpro</h2>
+            <h3 data-testid="profile-location">Los Angeles, CA, USA</h3>
+          </div>
+        </div>
+        <div class="card-desc">
+          <p data-testid="test-user-bio">
+            A passionate Frontend Developer crafting elegant, responsive, and
+            high-performance web experiences. Blending creativity with clean
+            code to turn ideas into intuitive user interfaces.
+          </p>
+        </div>
+        <div class="hobies-dislikes">
+          <section class="hobies">
+            <h3>Hobies</h3>
+            <div class="line"></div>
+            <ul data-testid="test-user-hobbies">
+              <li>📚 Reading</li>
+              <li>🎮 Gaming</li>
+              <li>💻 Coding</li>
+              <li>🎵 Music</li>
+              <li>🍳 Cooking</li>
+            </ul>
+          </section>
+          <section class="hobies">
+            <h3>Dislikes</h3>
+            <div class="line"></div>
+            <ul data-testid="test-user-dislikes">
+              <li>🔊 Noise</li>
+              <li>🤥 Lies</li>
+              <li>🦟 Flies</li>
+            </ul>
+        </section>
+        </div>
+        <footer class="card-footer" style="display: flex; margin-bottom: 1rem;">
+          <div class="current-time" data-testid="test-user-time" id="currentTime">
+           
+          </div>
+          <div class="socials">
+            <nav data-testid="test-user-social-links" aria-label="Social links">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/codexpro-dev"
+                data-testid="test-user-social-github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://x.com/?lang=en"
+                data-testid="test-user-social-twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/"
+                data-testid="test-user-social-facebook"
+                ><i class="fa-brands fa-facebook-messenger"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com"
+                data-testid="test-user-social-linkedin"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </nav>
+          </div>
+        </footer>
+      </div>
+    </article>
+    </main>
+
+    <script>
+      const currentTimeEl = document.getElementById("currentTime");
+      function updateTime() {
+        currentTimeEl.textContent = Date.now();
+      }
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

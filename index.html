@@ -1,120 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+     <script
       src="https://kit.fontawesome.com/143193fa4e.js"
       crossorigin="anonymous"
     ></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="profilecard.css" />
-    <title>Brainwave</title>
   </head>
   <body>
-    <article class="profile-card" data-testid="test-profile-card">
-      <div class="card" data-testid="card">
-        <div class="proTag">
-          <figure class="profile-img" data-testid="profile-img">
-            <img
-              src="assets/SpiderFerrariHP.jpg"
-              width="100"
-              alt="Profile photo of CodeXpro"
-              id="avatar"
-              data-testid="test-user-avatar"
-            />
-            <label for="FileInput" aria-label="Upload a new avatar">
-              <i class="fa-regular fa-camera"></i>
-              <input
-                type="file"
-                accept="image/*"
-                id="FileInput"
-                style="display: none;" 
-              />
-            </label>
-          </figure>
-          <div class="card-info" data-testid="card-info">
-            <h2 data-testid="test-user-name">CodeXpro</h2>
-            <h3 data-testid="profile-location">Los Angeles, CA, USA</h3>
-          </div>
+    <main>
+      <nav>
+        <div class="logo">
+          <h1><a href="/"><span>{</span> CødeXpro <span>}</span></a></h1>
         </div>
-        <div class="card-desc">
-          <p data-testid="test-user-bio">
-            A passionate Frontend Developer crafting elegant, responsive, and
-            high-performance web experiences. Blending creativity with clean
-            code to turn ideas into intuitive user interfaces.
-          </p>
+        <div class="nav-links">
+          <ul id="menuB">
+            <li><a href="/aboutUs.html">About Me</a></li>
+            <li><a href="/contactUs.html">Contact Me</a></li>
+            <li><a href="/profile.html">Profile Card</a></li>
+          </ul>
         </div>
-        <div class="hobies-dislikes">
-          <section class="hobies">
-            <h3>Hobies</h3>
-            <div class="line"></div>
-            <ul data-testid="test-user-hobbies">
-              <li>📚 Reading</li>
-              <li>🎮 Gaming</li>
-              <li>💻 Coding</li>
-              <li>🎵 Music</li>
-              <li>🍳 Cooking</li>
-            </ul>
-          </section>
-          <section class="hobies">
-            <h3>Dislikes</h3>
-            <div class="line"></div>
-            <ul data-testid="test-user-dislikes">
-              <li>🔊 Noise</li>
-              <li>🤥 Lies</li>
-              <li>🦟 Flies</li>
-            </ul>
-        </section>
+        <div id="menuBtn" class="navB" style="display: none;">
+          <div class="line1"></div>
+          <div class="line2"></div>
         </div>
-        <footer class="card-footer" style="display: flex; margin-bottom: 1rem;">
-          <div class="current-time" data-testid="test-user-time" id="currentTime">
-           
-          </div>
-          <div class="socials">
-            <nav data-testid="test-user-social-links" aria-label="Social links">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/codexpro-dev"
-                data-testid="test-user-social-github"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://x.com/?lang=en"
-                data-testid="test-user-social-twitter"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.facebook.com/"
-                data-testid="test-user-social-facebook"
-                ><i class="fa-brands fa-facebook-messenger"></i
-              ></a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com"
-                data-testid="test-user-social-linkedin"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </nav>
-          </div>
-        </footer>
-      </div>
-    </article>
-
-    <script>
-      const currentTimeEl = document.getElementById("currentTime");
-      function updateTime() {
-        currentTimeEl.textContent = Date.now();
-      }
-      updateTime();
-      setInterval(updateTime, 1000);
-    </script>
-
+      </nav>
+      <section class="main">
+        <h1>Hello World</h1>
+        <h1>I,m codex, and I love Fun Coding</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ipsum temporibus facilis, id saepe, <br> minus et sapiente eveniet animi nam repudiandae vero facere quis. Rem esse eveniet ipsa minima quaerat.</p>
+        <p class="sub-text">Welcome to The World of a <br><span> <></span><span class="text">Frontend Dev 😎</span><span>< /></span></p>
+      </section>
+      <footer>
+        <div class="logo">
+          <h1><span>{</span> CødeXpro <span>}</span></h1>
+        </div>
+        <div class="copywrite">
+          <p>© 3001 CodeXpro . All rights reserved.</p>
+        </div>
+        <div class="socials">
+          <nav data-testid="test-user-social-links" aria-label="Social links">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/codexpro-dev"
+              data-testid="test-user-social-github"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://x.com/?lang=en"
+              data-testid="test-user-social-twitter"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/"
+              data-testid="test-user-social-facebook"
+              ><i class="fa-brands fa-facebook-messenger"></i
+            ></a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com"
+              data-testid="test-user-social-linkedin"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </nav>
+        </div>
+      </footer>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
