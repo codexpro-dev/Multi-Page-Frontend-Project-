@@ -328,6 +328,7 @@ nav a:focus-visible {
   align-self: center;
   justify-self: center;
   height: 100%;
+  padding-top: 2rem;
 }
 
 .contactUs-text {
